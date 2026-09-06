@@ -1,56 +1,81 @@
-# BALAJIBK011 Portfolio
+# BALAJI B K — OFFICIAL WEBSITE V2
 
-Welcome to my personal portfolio website! This is a showcase of my projects, skills, and experience.
-
-## 🌐 Live Site
-
-Visit my portfolio at: [https://balajibk011.github.io](https://balajibk011.github.io)
+This is the official professional portfolio website for **BALAJI B K**, Computer Science Faculty at Bangalore North University.
 
 ## 📋 Contents
 
-- **Home** - Welcome section with an introduction
-- **About** - Information about me and my interests
-- **Projects** - Showcase of my projects and work
-- **Contact** - Ways to get in touch
-
-## 🛠️ Technologies Used
-
-- HTML5
-- CSS3
-- JavaScript (Vanilla)
-- GitHub Pages (Hosting)
+- **Home** - Welcome and introduction
+- **About** - Personal background and information
+- **Academics** - Course materials, teaching subjects, and academic resources
+- **Students** - Lab programs, viva preparation, assignments, and timetables
+- **Research** - Publications, research interests, projects, and certifications
+- **Department** - Department information, faculty, activities, and achievements
+- **Resources** - Announcements, question papers, and quick links
+- **Contact** - Professional contact information
 
 ## 🎨 Features
 
-- Responsive design (works on desktop, tablet, and mobile)
-- Smooth scrolling navigation
-- Intersection Observer API for scroll animations
-- Modern gradient backgrounds
-- Hover effects and transitions
-- Mobile-friendly layout
+- Modern, professional design
+- Fully responsive (desktop, tablet, mobile)
+- Dark mode toggle
+- Smooth animations and transitions
+- Fast loading performance
+- SEO optimized
+- Accessibility focused
 
-## 📝 How to Customize
+## 🚀 Setup Instructions
 
-1. Edit `index.html` to update your content
-2. Modify `styles.css` to change the styling and colors
-3. Update `script.js` to add additional interactivity
-4. Push your changes to the `main` branch
-5. Your site will automatically update within minutes
+This package includes:
+- `index.html` - Main website structure
+- `styles.css` - Complete styling
+- `script.js` - Interactive features
+- `assets/` folder - Logo and images
 
-## 🚀 Getting Started
+### Before Publishing:
+1. ✅ Replace `balajibk011@gmail.com` with your official email
+2. ✅ Replace phone number (+91 63620 84006) with your official number
+3. ✅ Add your profile photo to `assets/profile.jpg`
+4. ✅ Add campus/department photo to `assets/campus.jpg`
+5. ✅ Add university logo to `assets/bnu-logo.png`
+6. ✅ Update all academic content and announcements
+7. ✅ Review all text and ensure it's accurate
 
-If you want to run this locally:
+### Upload to GitHub Pages:
+1. Create a GitHub repository named `yourusername.github.io`
+2. Upload all files to the repository root
+3. Enable GitHub Pages in Settings
+4. Your site will be live at `https://yourusername.github.io`
 
-```bash
-git clone https://github.com/BALAJIBK011/balajibk011.github.io.git
-cd balajibk011.github.io
-# Open index.html in your browser
-```
+## 📝 Important Notes
 
-## 📄 License
+- Replace placeholder email and contact information
+- Update announcements regularly
+- Add actual lab programs and course materials
+- Customize research and publication sections
+- Ensure all external links are working
+- Test on mobile devices before publishing
 
-This project is open source and available under the MIT License.
+## 🔧 Customization
+
+- Edit HTML sections for content changes
+- Modify CSS color variables in `styles.css` for branding
+- Update JavaScript for additional functionality
+- Add PDF resources in dedicated folders
+
+## 📱 Responsive Design
+
+- Desktop: Full layout with all features
+- Tablet: Optimized grid layout
+- Mobile: Simplified navigation and stacked layout
+
+## 🌙 Dark Mode
+
+Visitors can toggle dark mode using the theme button in the navigation. Their preference is saved in browser storage.
+
+## 📞 Support
+
+For technical issues or customization needs, refer to the HTML/CSS/JavaScript source code or consult a web developer.
 
 ---
 
-**Happy coding!** 🎉
+**© 2026 BALAJI B K · All Rights Reserved**
