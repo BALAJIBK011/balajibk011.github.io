@@ -2,10 +2,7 @@ import { auth, db, storage } from './firebase.js';
 import { ADMIN_EMAIL } from './firebase-config.js';
 
 import {
-  onAuthStateChanged,
-  signInWithEmailAndPassword,
-  sendPasswordResetEmail,
-  signOut
+  onAuthStateChanged, signInWithEmailAndPassword, sendPasswordResetEmail, sendEmailVerification, signOut
 } from 'https://www.gstatic.com/firebasejs/12.18.0/firebase-auth.js';
 
 import {
