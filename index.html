@@ -1,59 +1,71 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Balaji B K — Professional Portfolio</title>
-  <meta name="description" content="Balaji B K — Software Engineer. Portfolio and professional site." />
-  <link rel="stylesheet" href="/assets/styles.css" />
-  <link rel="icon" href="/favicon.ico" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BALAJIBK011 - Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <header class="site-header">
-    <nav class="nav">
-      <div class="brand">Balaji B K</div>
-      <ul class="nav-links">
-        <li><a href="#about">About</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
+    <nav class="navbar">
+        <div class="container">
+            <h1 class="logo">BALAJIBK011</h1>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
     </nav>
-    <div class="hero">
-      <h1>Balaji B K</h1>
-      <p class="tagline">Software Engineer — Building clear, reliable web experiences</p>
-      <p class="cta"><a class="button" href="#contact">Get in touch</a></p>
-    </div>
-  </header>
 
-  <main class="container">
-    <section id="about" class="card">
-      <h2>About</h2>
-      <p>I build practical, maintainable web applications with a focus on usability and performance. I enjoy working across the stack — from polished UI to production-ready backends. This site is a concise professional portfolio and contact point.</p>
+    <header id="home" class="hero">
+        <div class="container">
+            <h1>Welcome to My Portfolio</h1>
+            <p>Building amazing web experiences</p>
+        </div>
+    </header>
+
+    <section id="about" class="about">
+        <div class="container">
+            <h2>About Me</h2>
+            <p>Hi! I'm a developer passionate about creating beautiful and functional web applications. This is my personal portfolio showcasing my work and projects.</p>
+        </div>
     </section>
 
-    <section id="projects" class="card">
-      <h2>Selected Projects</h2>
-      <ul class="projects">
-        <li>
-          <a href="https://github.com/BALAJIBK011" target="_blank" rel="noopener">GitHub profile</a>
-          <p>Explore code, repositories, and sample projects on my GitHub.</p>
-        </li>
-      </ul>
+    <section id="projects" class="projects">
+        <div class="container">
+            <h2>Projects</h2>
+            <div class="project-grid">
+                <div class="project-card">
+                    <h3>Project 1</h3>
+                    <p>Description of your first project goes here.</p>
+                </div>
+                <div class="project-card">
+                    <h3>Project 2</h3>
+                    <p>Description of your second project goes here.</p>
+                </div>
+                <div class="project-card">
+                    <h3>Project 3</h3>
+                    <p>Description of your third project goes here.</p>
+                </div>
+            </div>
+        </div>
     </section>
 
-    <section id="contact" class="card">
-      <h2>Contact</h2>
-      <p>Email: <a href="mailto:balajibk011@gmail.com">balajibk011@gmail.com</a></p>
-      <p>Connect: <a href="https://github.com/BALAJIBK011" target="_blank" rel="noopener">@BALAJIBK011</a></p>
-    </section>
-  </main>
+    <footer id="contact" class="footer">
+        <div class="container">
+            <h2>Get In Touch</h2>
+            <p>Feel free to reach out for collaboration or inquiries.</p>
+            <div class="social-links">
+                <a href="https://github.com/BALAJIBK011" target="_blank">GitHub</a>
+                <a href="https://twitter.com" target="_blank">Twitter</a>
+                <a href="mailto:your-email@example.com">Email</a>
+            </div>
+            <p class="copyright">&copy; 2026 BALAJIBK011. All rights reserved.</p>
+        </div>
+    </footer>
 
-  <footer class="site-footer">
-    <div class="container">© <span id="year"></span> Balaji B K — Built with GitHub Pages</div>
-  </footer>
-
-  <script>
-    document.getElementById('year').textContent = new Date().getFullYear();
-  </script>
+    <script src="script.js"></script>
 </body>
 </html>

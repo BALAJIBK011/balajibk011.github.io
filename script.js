@@ -1,11 +1,35 @@
-const $=s=>document.querySelector(s);
-$("#menu").onclick=()=>$("#nav").classList.toggle("open");
-document.querySelectorAll("#nav a").forEach(a=>a.onclick=()=>$("#nav").classList.remove("open"));
-const topBtn=$("#top"); const progress=$("#progress");
-window.addEventListener("scroll",()=>{let max=document.documentElement.scrollHeight-innerHeight;progress.style.width=(max?scrollY/max*100:0)+"%";topBtn.classList.toggle("show",scrollY>500)}, {passive:true});
-topBtn.onclick=()=>scrollTo({top:0,behavior:"smooth"});
-const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting)e.target.classList.add("visible")}),{threshold:.12});
-document.querySelectorAll(".reveal").forEach(x=>io.observe(x));
-const theme=$("#theme"); if(localStorage.getItem("bbk-theme")==="dark")document.body.classList.add("dark");
-theme.onclick=()=>{document.body.classList.toggle("dark");localStorage.setItem("bbk-theme",document.body.classList.contains("dark")?"dark":"light")};
-$("#year").textContent=new Date().getFullYear();
+// Smooth scrolling for navigation links
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        const target = document.querySelector(this.getAttribute('href'));
+        if (target) {
+            target.scrollIntoView({
+                behavior: 'smooth',
+                block: 'start'
+            });
+        }
+    });
+});
+
+// Add scroll animation for project cards
+const observerOptions = {
+    threshold: 0.1,
+    rootMargin: '0px 0px -100px 0px'
+};
+
+const observer = new IntersectionObserver(function(entries) {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            entry.target.style.opacity = '1';
+            entry.target.style.transform = 'translateY(0)';
+        }
+    });
+}, observerOptions);
+
+document.querySelectorAll('.project-card').forEach(card => {
+    card.style.opacity = '0';
+    card.style.transform = 'translateY(20px)';
+    card.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+    observer.observe(card);
+});
