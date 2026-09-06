@@ -1865,7 +1865,7 @@ async function addSiteMedia(
 }
 
 async function uploadFile(file, path) {
-  const CLOUD_NAME = "YOUR_CLOUD_NAME";
+  const CLOUD_NAME = "alOuzxbq";
   const UPLOAD_PRESET = "balaji_faculty_upload";
 
   const formData = new FormData();
