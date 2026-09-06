@@ -1,0 +1,16 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Admin Portal | BALAJI B K</title>
+  <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body class="admin-body">
+  <div id="loginView" class="admin-login"><div class="login-card"><div class="login-mark">🔐</div><p class="section-kicker">PRIVATE ADMINISTRATION</p><h1>BALAJI B K</h1><p>Manage the public academic website from one secure dashboard.</p><form id="loginForm"><label>Email<input id="loginEmail" type="email" autocomplete="username" required></label><label>Password<input id="loginPassword" type="password" autocomplete="current-password" required></label><button class="btn primary" type="submit">Sign in</button><button class="text-btn" id="resetPassword" type="button">Forgot password?</button><p id="loginMsg" class="form-msg"></p></form></div></div>
+  <div id="appView" class="admin-shell hidden">
+    <aside class="admin-sidebar"><div class="admin-brand"><div class="brand-mark"><img src="../assets/favicon.svg" alt="BNU"></div><div><strong>BALAJI B K</strong><span>ADMIN PORTAL</span></div></div><nav id="adminNav"><button data-view="dashboard">⌂ Dashboard</button><button data-view="site-media">🖼 Profile & Images</button><button data-view="subjects">📚 Theory & Practical</button><button data-view="upload-material">⬆ Upload Material</button><button data-view="question-papers">📝 Question Papers</button><button data-view="notifications">🔔 Notifications</button><button data-view="resources">📁 Resources</button><button data-view="research">◈ Research</button><button data-view="achievements">🏆 Achievements</button><button data-view="gallery">📸 Gallery</button><button data-view="published">☷ Published Content</button><button data-view="settings">⚙ Settings</button></nav><button id="logoutBtn" class="sidebar-logout">↪ Logout</button></aside>
+    <section class="admin-main"><header class="admin-top"><div><p class="section-kicker">ADMINISTRATION</p><h1 id="viewTitle">Dashboard</h1></div><div class="admin-user"><span id="adminEmail"></span><span class="status-dot"></span></div></header><div id="adminContent"></div></section>
+  </div>
+  <script type="module" src="../js/admin.js"></script>
+</body>
+</html>
