@@ -1864,29 +1864,31 @@ async function addSiteMedia(
   }
 }
 
-async function uploadFile(
-  file,
-  path
-) {
-  const storageRef =
-    ref(storage, path);
+async function uploadFile(file, path) {
+  const CLOUD_NAME = "YOUR_CLOUD_NAME";
+  const UPLOAD_PRESET = "balaji_faculty_upload";
 
-  await uploadBytes(
-    storageRef,
-    file,
+  const formData = new FormData();
+  formData.append("file", file);
+  formData.append("upload_preset", UPLOAD_PRESET);
+
+  const response = await fetch(
+    `https://api.cloudinary.com/v1_1/${CLOUD_NAME}/auto/upload`,
     {
-      contentType: file.type,
-      cacheControl:
-        'public,max-age=31536000'
+      method: "POST",
+      body: formData
     }
   );
 
+  const data = await response.json();
+
+  if (!response.ok) {
+    throw new Error(data.error?.message || "Cloudinary upload failed.");
+  }
+
   return {
-    url:
-      await getDownloadURL(
-        storageRef
-      ),
-    path
+    url: data.secure_url,
+    path: data.public_id
   };
 }
 
